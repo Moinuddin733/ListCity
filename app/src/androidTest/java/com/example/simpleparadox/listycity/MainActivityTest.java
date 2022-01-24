@@ -28,7 +28,7 @@ public class MainActivityTest {
      * @throws Exception
      */
 
-
+   //Roll:1707067
     @Test
     public void checkList(){
     // Asserts that the current activity is the MainActivity. Otherwise, show “Wrong Activity”
@@ -38,8 +38,7 @@ public class MainActivityTest {
         solo.enterText((EditText) solo.getView(R.id.editText_name), "DHAKA");
         solo.clickOnButton("CONFIRM"); //Select CONFIRM Button
         solo.clearEditText((EditText) solo.getView(R.id.editText_name)); //Clear the EditText
-    /* True if there is a text: Edmonton on the screen, wait at least 2 seconds and find
-    minimum one match. */
+        //Roll:1707067
         assertTrue(solo.waitForText("DHAKA", 1, 2000));
         solo.clickLongInList(0);
         solo.clickOnButton("Back");
